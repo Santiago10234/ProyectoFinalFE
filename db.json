@@ -1,6 +1,56 @@
 {
   "users": [
-    { "id": 1, "name": "John Doe", "email": "john@example.com" },
-    { "id": 2, "name": "Jane Smith", "email": "jane@example.com" }
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane@example.com"
+    },
+    {
+      "id": "6726",
+      "user": "Santiago Ariza",
+      "email": "sariza@fwdcostarica.com",
+      "password": "1234"
+    },
+    {
+      "id": "3f54",
+      "user": "Pablo",
+      "email": "pablo@fwdcostarica.com",
+      "password": "1234"
+    },
+    {
+      "id": "98c4",
+      "user": "Roberto",
+      "email": "pablo@fwdcostarica.com",
+      "password": "1212"
+    },
+    {
+      "id": "edbc",
+      "user": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "b66d",
+      "user": "Fran",
+      "email": "pablo@fwdcostarica.com",
+      "password": "123456"
+    },
+    {
+      "id": "5962",
+      "user": "Maria",
+      "email": "pablo@fwdcostarica.com",
+      "password": "1234"
+    },
+    {
+      "id": "135a",
+      "user": "dsa",
+      "email": "dasd",
+      "password": "dasd"
+    }
   ]
 }
