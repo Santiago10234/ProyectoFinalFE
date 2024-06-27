@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Inicio from './Inicio.jsx'
+import Login from './Login.jsx'
 import Register from './Register.jsx'
 
 
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Inicio/>,
+  },
+  {
+    path: "/login",
+    element: <Login/>,
   },
   {
     path: "/registro",

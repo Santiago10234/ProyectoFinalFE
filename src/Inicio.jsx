@@ -9,7 +9,9 @@ function Inicio() {
                 <h1 className='h1'>Welcome to Luxury Cars</h1>
             </div>
             <form className='container-form'>
-                <button type='button' className='btn1'>Login</button>
+                <button onClick={()=>{
+                    navigate("/login")
+                }} type='button' className='btn1'>Login</button>
                 <button onClick={()=>{
                     navigate("/registro")
                 }} type='button' className='btn2'>Register</button>

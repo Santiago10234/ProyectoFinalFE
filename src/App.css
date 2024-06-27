@@ -67,7 +67,7 @@
 .container-register{
   background: #0f1931;
   padding: 20px;
-  height: 300px;
+  
   width: 200px;
   border-radius: 20px;
   box-shadow: 1px 1px 20px black;
@@ -94,6 +94,7 @@
 }
 .btn-register{
   margin-top: 20px;
+  margin-bottom: 30px;
   padding: 8px;
   border: none;
   border-radius: 5px;
