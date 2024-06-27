@@ -30,14 +30,14 @@
   color: #ccc;
   background: #0A1121;
   box-shadow: 1px 1px 20px #ccc;
-  transition: 0.5s;
+  transition: 1s;
   transform: scale(1.1);
 }
 .btn2:hover{
   color: #ccc;
   background: #0A1121;
   box-shadow: 1px 1px 20px #ccc;
-  transition: 0.5s;
+  transition: 1s;
   transform: scale(1.1);
 }
 .container-form{
@@ -60,4 +60,52 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* register  */
+
+.container-register{
+  background: #0f1931;
+  padding: 20px;
+  height: 300px;
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container-inp{
+  display: grid;
+  align-items: center;
+  justify-content: center;  
+}
+.titulo-register{
+  text-align: center;
+  color: #ccc;
+}
+.inp{
+  margin-top: 20px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+}
+.btn-register{
+  margin-top: 20px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ccc;
+  color: #0A1121;
+  cursor: pointer;
+  transition: 1s;
+}
+.btn-register:hover{
+  color: #ccc;
+  background: #0A1121;
+  box-shadow: 1px 1px 20px #ccc;
+  transition: 1s;
+  transform: scale(1.1);
 }

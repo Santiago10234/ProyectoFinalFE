@@ -1,6 +1,7 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom'
 function Inicio() {
+    const navigate = useNavigate()
   return (
     <section className='container'>
         <div className='container-inicio'>
@@ -9,7 +10,9 @@ function Inicio() {
             </div>
             <form className='container-form'>
                 <button type='button' className='btn1'>Login</button>
-                <button type='button' className='btn2'>Register</button>
+                <button onClick={()=>{
+                    navigate("/registro")
+                }} type='button' className='btn2'>Register</button>
             </form>
         </div>
     </section>
