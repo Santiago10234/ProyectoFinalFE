@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { guardarUser } from './Fetch/Post'
-
+import { useNavigate } from 'react-router-dom'
 function Register() {
     const [nombre,setNombre]=useState("")
     const [correo, setCorreo]=useState("")
     const [clave, setClave]=useState("")
+    const navigate = useNavigate()
     const agregarUser = async ()=>{
         if (nombre.trim() === '' || correo.trim() === '' || clave.trim() === '') {
             alert('Todos los espacios deben de estar completos');
@@ -19,6 +20,7 @@ function Register() {
             setNombre("")
             setCorreo("")
             setClave("")
+            navigate("/login")
         } catch (error) {
             console.error(error);
         }

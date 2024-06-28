@@ -51,6 +51,18 @@
       "user": "dsa",
       "email": "dasd",
       "password": "dasd"
+    },
+    {
+      "id": "b3b9",
+      "user": "Luca",
+      "email": "pablo@fwdcostarica.com",
+      "password": "1234"
+    },
+    {
+      "id": "98d6",
+      "user": "Lucas",
+      "email": "pablo@fwdcostarica.com",
+      "password": "1234"
     }
   ]
 }
