@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import traerUser from './Fetch/Get'
+import traerUser from '../Fetch/Get'
 import { useNavigate } from 'react-router-dom'
 
 function Login() {

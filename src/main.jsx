@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Inicio from './Inicio.jsx'
-import Login from './Login.jsx'
-import Register from './Register.jsx'
+import Inicio from './Pages/Inicio.jsx'
+import Login from './Pages/Login.jsx'
+import Register from './Pages/Register.jsx'
 
 
 const router = createBrowserRouter([

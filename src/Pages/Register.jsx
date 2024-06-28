@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { guardarUser } from './Fetch/Post'
+import { guardarUser } from '../Fetch/Post'
 import { useNavigate } from 'react-router-dom'
 function Register() {
     const [nombre,setNombre]=useState("")
