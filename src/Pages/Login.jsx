@@ -18,7 +18,9 @@ function Login() {
   
         
         const valitar = ()=>{
-            if(lista.find(users => users.email === correo && users.password === clave)){
+            const usuario = lista.find(users => users.email === correo && users.password === clave)
+            if(usuario){
+                localStorage.setItem("idU",usuario.id)
                 navigate("/luxuryCars")
             }else{
                 alert("Email o contraseña incorrecta")

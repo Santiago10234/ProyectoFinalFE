@@ -7,6 +7,7 @@ import Inicio from './Pages/Inicio.jsx'
 import Login from './Pages/Login.jsx'
 import Register from './Pages/Register.jsx'
 import LuxuryCars from './Pages/LuxuryCars.jsx'
+import Publicar from './Components/Publicar.jsx'
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,14 @@ const router = createBrowserRouter([
   {
     path: "/luxuryCars",
     element: <LuxuryCars/>
+  },
+  {
+    path: "/publicar",
+    element: <Publicar/>
+  },
+  {
+    path: "/publicar",
+    element: <Publicar/>
   }
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
