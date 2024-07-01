@@ -5,6 +5,18 @@
       "user": "Santiago Ariza",
       "email": "sariza@fwdcostarica.com",
       "password": "1234"
+    },
+    {
+      "id": "4464",
+      "user": "Juan",
+      "email": "pablo@fwdcostarica.com",
+      "password": "1234"
+    },
+    {
+      "id": "e7c7",
+      "user": "Jimena",
+      "email": "Jimena@gmai.com",
+      "password": "1234"
     }
   ]
 }

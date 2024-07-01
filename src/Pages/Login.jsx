@@ -3,6 +3,7 @@ import traerUser from '../Fetch/Get'
 import { useNavigate } from 'react-router-dom'
 
 function Login() {
+    const navigate = useNavigate()
         const [lista, setLista]= useState([])
         const [correo, setCorreo] = useState("")
         const [clave, setClave] = useState("")
@@ -17,7 +18,13 @@ function Login() {
   
         
         const valitar = ()=>{
-            lista.find(users => users.correo === correo && users.clave === clave)
+            if(lista.find(users => users.email === correo && users.password === clave)){
+                navigate("/luxuryCars")
+            }else{
+                alert("Email o contraseña incorrecta")
+                console.log(lista);
+            }
+            
         }
 
  return (

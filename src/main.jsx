@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Inicio from './Pages/Inicio.jsx'
 import Login from './Pages/Login.jsx'
 import Register from './Pages/Register.jsx'
+import LuxuryCars from './Pages/LuxuryCars.jsx'
 
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/registro",
     element: <Register/>
+  },
+  {
+    path: "/luxuryCars",
+    element: <LuxuryCars/>
   }
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
