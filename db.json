@@ -5,18 +5,26 @@
       "user": "Santiago Ariza",
       "email": "sariza@fwdcostarica.com",
       "password": "1234"
+    } 
+ ],
+ "cars":[
+    {
+        "id": "0",
+        "Brand": "Toyota",
+        "Model": "Yaris",
+        "userID": "5d7a",
+        "img":"https://th.bing.com/th/id/OIP.PSVphjiLo7a9WbxKHc3CNgHaEK?rs=1&pid=ImgDetMain",
+        "price":"2,000,000",
+        "year":"2006"
     },
     {
-      "id": "4464",
-      "user": "Juan",
-      "email": "pablo@fwdcostarica.com",
-      "password": "1234"
-    },
-    {
-      "id": "e7c7",
-      "user": "Jimena",
-      "email": "Jimena@gmai.com",
-      "password": "1234"
+        "id": "1",
+        "Brand": "Hyundai",
+        "Model": "Elantra",
+        "userID": "5d7a",
+        "img":"https://th.bing.com/th/id/R.06823819aab074f4e59fdcf7624b6955?rik=X1iXgYCeuokI6A&riu=http%3a%2f%2fmomentcar.com%2fimages%2fhyundai-elantra-2003-5.jpg&ehk=VsuUswiiYMEXg%2b48z1OuLevjSMVZwIynq%2fWWprMBTwc%3d&risl=&pid=ImgRaw&r=0",
+        "price":"GRATIS",
+        "year":"2003"
     }
-  ]
+ ]
 }
