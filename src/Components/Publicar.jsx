@@ -3,6 +3,7 @@ import NavBar from './NavBar'
 import '../styles/publicar.css'
 
 function Publicar() {
+  
   return (
     <div>
         <NavBar/>

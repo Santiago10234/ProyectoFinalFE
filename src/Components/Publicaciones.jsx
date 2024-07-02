@@ -1,9 +1,10 @@
 import React from 'react'
 import  Card  from '../Components/Card'
-
+import  '../styles/Publicaciones.css'
 function Publicaciones({getCarros}) {
   return (
-    <div>
+    <div className='contenedor-publicaciones'>
+      <div className='contenedor-card'>
         {getCarros.map((actualCar)=>(
           <Card
           key={actualCar.id}
@@ -14,6 +15,7 @@ function Publicaciones({getCarros}) {
           year={actualCar.year}
           />
         ))}
+      </div>
     </div>
   )
 }
