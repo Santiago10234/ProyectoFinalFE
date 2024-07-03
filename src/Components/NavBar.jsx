@@ -23,8 +23,8 @@ function NabBar() {
         </div>
         <div className='nave'>
             <div>
-                <a className='btn' onClick={luxuryCars}>INICIO</a>
-                <a className='btn'>VEHÍCULOS</a>
+                <a className='btn'>INICIO</a>
+                <a className='btn' onClick={luxuryCars}>VEHÍCULOS</a>
                 <a className='btn'>NOSOTROS</a>
                 <a className='btn' onClick={publicar}>PUBLICAR</a>
             </div>

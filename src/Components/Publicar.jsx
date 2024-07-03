@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import NavBar from './NavBar';
 import '../styles/publicar.css';
 import { enviaDatosDeAmbos } from '../Fetch/Post';
+import { useNavigate } from 'react-router-dom';
 
 function Publicar() {
   const [marca,setMarca]=useState()
@@ -9,8 +10,11 @@ function Publicar() {
   const [year,setYear]=useState()
   const [precio,setPrecio]=useState()
   const [img,setImg]=useState()
+  const navigate = useNavigate()
+
   const agregaCarro=async()=>{
     await enviaDatosDeAmbos(marca,modelo,img,precio,year)
+    navigate("/luxuryCars")
   }
   const handleImage = (e) => {
     const file = document.getElementById("upload-file").files[0];

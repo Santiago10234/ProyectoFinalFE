@@ -5,9 +5,9 @@ function Card({brand,model,img,price,year}) {
     <div className='container-2'>
        <h3>{brand}</h3> 
        <img className='img' src={img} alt="" height={"120px"} width={"180px"}/>
-      <span>{model}</span>
-      <span className='price'>{price}</span>
-      <h4 className='year'>{year}</h4> 
+       <span>{model}</span>
+       <span className='price'>{price}</span>
+       <h4 className='year'>{year}</h4> 
     </div>
   )
 }
