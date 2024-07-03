@@ -26,8 +26,8 @@ const enviaDatosDeAmbos = async (marca, modelo, img, precio, year) => {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          Brand: marca,
-          Model: modelo,
+          brand: marca,
+          model: modelo,
           img: img,
           price: precio,
           year: year,

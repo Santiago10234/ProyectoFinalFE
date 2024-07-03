@@ -12,8 +12,8 @@ function LuxuryCars() {
       setListaCarros(data)
     }
     traerCarros()
+    console.log(listaCarros);
   },[])
-
 
   return (
     <div>

@@ -4,4 +4,19 @@
     height: 250px;
     width: 200px;
     border-radius: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    border-radius: 5px;
+}
+.price{
+    color: green;
+}
+.contenedor-card{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px 200px;
 }

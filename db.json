@@ -5,119 +5,61 @@
       "user": "Santiago Ariza",
       "email": "sariza@fwdcostarica.com",
       "password": "1234"
-    } 
- ],
-
+    }
+  ],
   "cars": [
     {
       "id": "0",
-      "Brand": "Toyota",
-      "Model": "Yaris",
+      "brand": "Toyota",
+      "model": "Yaris",
       "userID": "5d7a",
       "img": "https://th.bing.com/th/id/OIP.PSVphjiLo7a9WbxKHc3CNgHaEK?rs=1&pid=ImgDetMain",
       "price": "2,000,000",
       "year": "2006"
     },
     {
-      "id": "1",
-      "Brand": "Hyundai",
-      "Model": "Elantra",
-      "userID": "5d7a",
-      "img": "https://th.bing.com/th/id/R.06823819aab074f4e59fdcf7624b6955?rik=X1iXgYCeuokI6A&riu=http%3a%2f%2fmomentcar.com%2fimages%2fhyundai-elantra-2003-5.jpg&ehk=VsuUswiiYMEXg%2b48z1OuLevjSMVZwIynq%2fWWprMBTwc%3d&risl=&pid=ImgRaw&r=0",
-      "price": "GRATIS",
-      "year": "2003"
-    },
-    {
-      "id": "1",
-      "Brand": "Hyundai",
-      "Model": "Elantra",
-      "userID": "5d7a",
-      "img": "https://th.bing.com/th/id/R.06823819aab074f4e59fdcf7624b6955?rik=X1iXgYCeuokI6A&riu=http%3a%2f%2fmomentcar.com%2fimages%2fhyundai-elantra-2003-5.jpg&ehk=VsuUswiiYMEXg%2b48z1OuLevjSMVZwIynq%2fWWprMBTwc%3d&risl=&pid=ImgRaw&r=0",
-      "price": "GRATIS",
-      "year": "2003"
-    },
-    {
-      "id": "1",
-      "Brand": "Hyundai",
-      "Model": "Elantra",
-      "userID": "5d7a",
-      "img": "https://th.bing.com/th/id/R.06823819aab074f4e59fdcf7624b6955?rik=X1iXgYCeuokI6A&riu=http%3a%2f%2fmomentcar.com%2fimages%2fhyundai-elantra-2003-5.jpg&ehk=VsuUswiiYMEXg%2b48z1OuLevjSMVZwIynq%2fWWprMBTwc%3d&risl=&pid=ImgRaw&r=0",
-      "price": "GRATIS",
-      "year": "2003"
-    },
-    {
-      "id": "1",
-      "Brand": "Hyundai",
-      "Model": "Elantra",
-      "userID": "5d7a",
-      "img": "https://th.bing.com/th/id/R.06823819aab074f4e59fdcf7624b6955?rik=X1iXgYCeuokI6A&riu=http%3a%2f%2fmomentcar.com%2fimages%2fhyundai-elantra-2003-5.jpg&ehk=VsuUswiiYMEXg%2b48z1OuLevjSMVZwIynq%2fWWprMBTwc%3d&risl=&pid=ImgRaw&r=0",
-      "price": "GRATIS",
-      "year": "2003"
-    },
-    {
-      "id": "1",
-      "Brand": "Hyundai",
-      "Model": "Elantra",
-      "userID": "5d7a",
-      "img": "https://th.bing.com/th/id/R.06823819aab074f4e59fdcf7624b6955?rik=X1iXgYCeuokI6A&riu=http%3a%2f%2fmomentcar.com%2fimages%2fhyundai-elantra-2003-5.jpg&ehk=VsuUswiiYMEXg%2b48z1OuLevjSMVZwIynq%2fWWprMBTwc%3d&risl=&pid=ImgRaw&r=0",
-      "price": "GRATIS",
-      "year": "2003"
-    },
-    {
-      "id": "1",
-      "Brand": "Hyundai",
-      "Model": "Elantra",
-      "userID": "5d7a",
-      "img": "https://th.bing.com/th/id/R.06823819aab074f4e59fdcf7624b6955?rik=X1iXgYCeuokI6A&riu=http%3a%2f%2fmomentcar.com%2fimages%2fhyundai-elantra-2003-5.jpg&ehk=VsuUswiiYMEXg%2b48z1OuLevjSMVZwIynq%2fWWprMBTwc%3d&risl=&pid=ImgRaw&r=0",
-      "price": "GRATIS",
-      "year": "2003"
-    },
-    {
-      "id": "59f5",
-      "Brand": "Aston Martin",
-      "Model": "dbx",
-      "img": "C:\\fakepath\\carro2.jpg",
-      "price": "58000000",
-      "year": "2022"
-    },
-    {
-      "id": "09ba",
-      "Brand": "Aston Martin",
-      "Model": "dbx",
-      "img": "C:\\fakepath\\carro2.jpg",
-      "price": "57000000",
-      "year": "2022"
-    },
-    {
-      "id": "0785",
-      "Brand": "Audi",
-      "Model": "R8",
-      "img": {},
-      "price": "900000",
-      "year": "2023"
-    },
-    {
-      "id": "27d9",
-      "Brand": "Aston Martin",
-      "Model": "dsad",
+      "id": "a6d2",
+      "brand": "Alfa Romeo",
+      "model": "dasd",
       "img": "",
-      "price": "dsada",
-      "year": "12",
+      "price": "212",
+      "year": "121",
+      "userID": "5d7a"
+    },
+    {
+      "id": "62d7",
+      "brand": "Aston Martin",
+      "model": "dbx",
+      "img": "",
+      "price": "$120.000.000",
+      "year": "2022",
+      "userID": "5d7a"
+    },
+    {
+      "id": "4a91",
+      "model": "Vulcan",
+      "img": "",
+      "price": "$300.000.000",
+      "year": "2024",
+      "userID": "5d7a"
+    },
+    {
+      "id": "8038",
+      "brand": "Audi",
+      "model": "R8",
+      "img": "",
+      "price": "$150.000.000",
+      "year": "2020",
+      "userID": "5d7a"
+    },
+    {
+      "id": "e6da",
+      "brand": "BMW",
+      "model": "X5",
+      "img": "",
+      "price": "$120.000.000",
+      "year": "2022",
       "userID": null
-    },
-    {
-      "id": "f959",
-      "Brand": "Aston Martin",
-      "Model": "dsad",
-      "img": "",
-      "price": "dsads",
-      "year": "21",
-      "userID": "5d7a"
-    },
-    {
-      "id": "cb1f",
-      "Brand": {},
-      "userID": "5d7a"
     }
   ]
 }
