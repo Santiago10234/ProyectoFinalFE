@@ -15,6 +15,10 @@ function NabBar() {
     const luxuryCars = () =>{
       navigate("/luxuryCars")
   }
+  const miPublicacion = () =>{
+    navigate("/mipublicacion")
+}
+  
   return (
     <div className='nav-container'>
       <nav className='NavBar'>
@@ -25,7 +29,7 @@ function NabBar() {
             <div>
                 <a className='btn'>INICIO</a>
                 <a className='btn' onClick={luxuryCars}>VEHÍCULOS</a>
-                <a className='btn'>NOSOTROS</a>
+                <a className='btn' onClick={miPublicacion}>MIS PUBLICACIONES</a>
                 <a className='btn' onClick={publicar}>PUBLICAR</a>
             </div>
             <div>

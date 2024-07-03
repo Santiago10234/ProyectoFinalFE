@@ -5,6 +5,12 @@
       "user": "Santiago Ariza",
       "email": "sariza@fwdcostarica.com",
       "password": "1234"
+    },
+    {
+      "id": "c864",
+      "user": "dsa",
+      "email": "pablo@fwdcostarica.com",
+      "password": "dassd"
     }
   ],
   "cars": [
@@ -70,6 +76,22 @@
       "price": "$ 300.000",
       "year": "2019",
       "userID": "5d7a"
+    },
+    {
+      "id": "a3e1",
+      "brand": "Aston Martin",
+      "model": "dsa",
+      "price": "sada",
+      "year": "212",
+      "userID": "c864"
+    },
+    {
+      "id": "68fc",
+      "brand": "Dodge",
+      "model": "dsad",
+      "price": "dsa",
+      "year": "2112",
+      "userID": "c864"
     }
   ]
 }

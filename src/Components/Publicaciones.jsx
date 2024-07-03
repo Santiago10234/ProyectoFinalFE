@@ -1,7 +1,7 @@
 import React from 'react'
 import  Card  from '../Components/Card'
 
-function Publicaciones({getCarros}) {
+function Publicaciones({getCarros,mostrar,btnEliminar}) {
   
   return (
     <div className='contenedor-card'>
@@ -13,6 +13,8 @@ function Publicaciones({getCarros}) {
           model={car.model}
           year={car.year}
           price={car.price}
+          mostrar={mostrar}
+          btnEliminar={()=>btnEliminar(car.id)}
         />
        ))}
     </div>

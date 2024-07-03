@@ -14,12 +14,27 @@
 .price{
     color: green;
 }
-.year{
-    margin-top: 5px;
+
+.btn-eliminar{
+    color: #ccc;
+    background: rgb(186, 70, 70);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btn-eliminar:hover{
+    transform: scale(1.1);
 }
 .contenedor-card{
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: 300px 300px 300px 200px;
+}
+.contenedor-year-Elim{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -15px;
 }
