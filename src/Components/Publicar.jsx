@@ -8,10 +8,20 @@ function Publicar() {
   const [modelo,setModelo]=useState()
   const [year,setYear]=useState()
   const [precio,setPrecio]=useState()
-
+  const [img,setImg]=useState()
   const agregaCarro=async()=>{
-    await enviaDatosDeAmbos(marca,modelo,"",precio,year)
+    await enviaDatosDeAmbos(marca,modelo,img,precio,year)
   }
+  const handleImage = (e) => {
+    const file = document.getElementById("upload-file").files[0];
+    const reader = new FileReader();
+    if (file) {
+        reader.onload = function(e) {
+            setImg(e.target.result);
+        };
+        reader.readAsDataURL(file);
+    }
+};
 
 
   return (
@@ -21,8 +31,8 @@ function Publicar() {
         <div className="container-register">
           <h1 className='titulo'>Vehículo</h1>
           <form className='container-inp'>
-            <input className='file' type="file" />
-            <select value={marca} onChange={(e)=> setMarca(e.target.value)} className='inp'>
+          <input className='file' id="upload-file" accept="image/x-png,image/gif,image/jpeg" type="file" onChange={handleImage}/>
+              <select value={marca} onChange={(e)=> setMarca(e.target.value)} className='inp'>
               <option defaultValue>Marca</option>
               <option>Alfa Romeo</option>
               <option>Aston Martin</option>
@@ -30,6 +40,7 @@ function Publicar() {
               <option>Bentley</option>
               <option>BMW</option>
               <option>Cadillac</option>
+              <option>Dodge</option>
               <option>Ferrari</option>
               <option>Audi</option>
               <option>Ford</option>
@@ -50,6 +61,7 @@ function Publicar() {
             <input value={modelo} onChange={(e)=> setModelo(e.target.value)} className='inp' placeholder='Modelo' type="text" />
             <input value={year} onChange={(e)=> setYear(e.target.value)} className='inp' placeholder='Año' type="number" />
             <input value={precio} onChange={(e)=> setPrecio(e.target.value)} className='inp' placeholder='Precio' type="text" />
+
             <button onClick={agregaCarro} className='btn-register' type='submit'>Publicar</button>
           </form>
         </div>
