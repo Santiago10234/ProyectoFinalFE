@@ -1,9 +1,0 @@
-.contenedor-card{
-    display: grid;
-    grid-template-columns: 300px 300px 300px 250px ;
-}
-.contenedor-publicaciones{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}

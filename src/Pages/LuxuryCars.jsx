@@ -18,9 +18,7 @@ function LuxuryCars() {
   return (
     <div>
         <NabBar/>
-        <div>
         <Publicaciones getCarros={listaCarros}/>
-        </div>
     </div>
   )
 }

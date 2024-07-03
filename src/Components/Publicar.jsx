@@ -3,36 +3,6 @@ import NavBar from './NavBar';
 import '../styles/publicar.css';
 
 function Publicar() {
-  const [img, setImg] = useState(null); // Estado para la imagen
-  const [marca, setMarca] = useState("");
-  const [modelo, setModelo] = useState("");
-  const [year, setYear] = useState("");
-  const [precio, setPrecio] = useState("");
-
-  // Función para manejar el cambio de archivo de imagen
-  const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      setImg(file);
-    }
-  };
-
-  // Función para manejar el envío del formulario
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Aquí puedes manejar el envío del formulario, incluyendo la imagen
-    console.log("Formulario enviado:", {
-      img,
-      marca,
-      modelo,
-      year,
-      precio
-    });
-    // Aquí puedes llamar a tu función para enviar los datos a la API
-    // Por ejemplo:
-    // enviarDatosA_API({ img, marca, modelo, year, precio });
-  };
-
   return (
     <div>
       <NavBar />
