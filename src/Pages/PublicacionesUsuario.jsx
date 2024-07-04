@@ -4,6 +4,7 @@ import Publicaciones from '../Components/Publicaciones'
 import { traeCarrosPorUsuario } from '../Fetch/Get'
 import { useState,useEffect } from 'react'
 import { DeleteCars } from '../Fetch/Delete'
+
 function PublicacionesUsuario() {
   
   const [listaCarros,setListaCarros]=useState([])
@@ -17,10 +18,17 @@ function PublicacionesUsuario() {
     console.log(listaCarros);
   },[])
 
-  const eliminarPubli = async ()=>{
+  useEffect(()=>{
+   
+    eliminarPubli()
+  },[])
+  const eliminarPubli = async (id)=>{
     const elim = await DeleteCars(id)
     console.log(elim)
   }
+
+  
+
     return (
     <div>
       <NabBar/>

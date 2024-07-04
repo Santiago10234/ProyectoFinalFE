@@ -1,5 +1,5 @@
 async function DeleteCars(id) {
-    const url = 'http://localhost:3001/cars'+id;
+    const url = `http://localhost:3001/cars/${id}`;
   
     try {
       const response = await fetch(url, {

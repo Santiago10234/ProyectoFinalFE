@@ -13,8 +13,16 @@ function Publicar() {
   const navigate = useNavigate()
 
   const agregaCarro=async()=>{
-    await enviaDatosDeAmbos(marca,modelo,img,precio,year)
-    navigate("/luxuryCars")
+    if (marca.trim() === '' || modelo.trim() === '' || year.trim() === '' || img.trim() === '' || precio.trim() === '') {
+      alert('Todos los espacios deben de estar completos');
+      return;
+    }
+    try {
+      await enviaDatosDeAmbos(marca,modelo,img,precio,year)
+      navigate("/luxuryCars")
+    } catch (error) {
+      
+    }
   }
   const handleImage = (e) => {
     const file = document.getElementById("upload-file").files[0];
