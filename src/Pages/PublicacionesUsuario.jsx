@@ -18,14 +18,15 @@ function PublicacionesUsuario() {
     console.log(listaCarros);
   },[])
 
-  useEffect(()=>{
-   
-    eliminarPubli()
-  },[])
   const eliminarPubli = async (id)=>{
     const elim = await DeleteCars(id)
     console.log(elim)
   }
+  useEffect(()=>{
+   
+    eliminarPubli()
+  },[])
+  
 
   
 
