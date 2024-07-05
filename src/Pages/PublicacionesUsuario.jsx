@@ -4,6 +4,7 @@ import Publicaciones from '../Components/Publicaciones'
 import { traeCarrosPorUsuario } from '../Fetch/Get'
 import { useState,useEffect } from 'react'
 import { DeleteCars } from '../Fetch/Delete'
+import { putPublicacion } from '../Fetch/Put'
 
 function PublicacionesUsuario() {
   
@@ -23,17 +24,20 @@ function PublicacionesUsuario() {
     console.log(elim)
   }
   useEffect(()=>{
-   
     eliminarPubli()
   },[])
   
+  const editarPubli = async ()=>{
+    const edit = await putPublicacion(id ,marca, modelo, precio, year)
+    console.log(edit)
 
+  }
   
 
     return (
     <div>
       <NabBar/>
-      <Publicaciones btnEliminar={eliminarPubli} getCarros={listaCarros} mostrar={true} />
+      <Publicaciones btnEditar={editarPubli} btnEliminar={eliminarPubli} getCarros={listaCarros} mostrar={true} />
     </div>
   )
 }

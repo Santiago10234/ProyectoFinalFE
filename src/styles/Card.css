@@ -38,3 +38,19 @@
     justify-content: space-between;
     margin-top: -15px;
 }
+.container-price-edit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-edit{
+    color: #ccc;
+    background: rgb(37, 131, 59);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btn-edit:hover{
+    transform: scale(1.1);
+}
