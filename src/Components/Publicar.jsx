@@ -12,7 +12,8 @@ function Publicar() {
   const [img,setImg]=useState()
   const navigate = useNavigate()
 
-  const agregaCarro=async()=>{
+  const agregaCarro=async(e)=>{
+    e.preventDefault()
     if (marca.trim() === '' || modelo.trim() === '' || year.trim() === '' || img.trim() === '' || precio.trim() === '') {
       alert('Todos los espacios deben de estar completos');
       return;

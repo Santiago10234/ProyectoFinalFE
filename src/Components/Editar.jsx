@@ -7,7 +7,7 @@ function Editar() {
         <div className="container-register">
           <h1 className='titulo'>Edita tu Vehículo</h1>
           <form className='container-inp'>
-              <select value={marca} onChange={(e)=> setMarca(e.target.value)} className='inp'>
+              <select className='inp'>
                 <option defaultValue>Marca</option>
                 <option>Alfa Romeo</option>
                 <option>Aston Martin</option>
@@ -37,7 +37,7 @@ function Editar() {
             <input className='inp' placeholder='Año' type="number" />
             <input className='inp' placeholder='Precio' type="text" />
 
-            <button className='btn-register' type='submit'>Publicar</button>
+            <button className='btn-register' type='submit'>Editar</button>
           </form>
         </div>
       </div>
