@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import { putPublicacion } from '../Fetch/Put'
 
 
-
-function Editar({id}) {
+function Editar({id,recarga}) {
   const [brandE,setBrand]=useState()
   const [modelE,setModel]=useState()
   const [yearE,setYear]=useState()
@@ -30,8 +29,9 @@ function Editar({id}) {
       price:priceE
     }
     await putPublicacion(id,actualizacion)
-
+    recarga()
     
+
   }
   return (
     <div>
@@ -71,7 +71,7 @@ function Editar({id}) {
             <input className='inp' placeholder='Año' type="number" onChange={(e)=>setYear(e.target.value)}/>
             <input className='inp' placeholder='Precio' type="text" onChange={(e)=>setPrice(e.target.value)}/>
 
-            <button className='btn-register' onClick={actualizarDatos} type='button'>Editar</button>
+            <button className='btn-register' onClick={actualizarDatos} type='submit'>Editar</button>
           </form>
         </div>
       </div>

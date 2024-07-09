@@ -42,7 +42,7 @@ function PublicacionesUsuario() {
     <div>
       <NabBar/>
       <Publicaciones btnEditar={editarClick} btnEliminar={eliminarPubli}  getCarros={listaCarros} mostrar={true} />
-      {mostrarEditar && <Editar id={id} />} 
+      {mostrarEditar && <Editar id={id}  recarga={recargaPag}/>} 
     </div>
   )
 }
