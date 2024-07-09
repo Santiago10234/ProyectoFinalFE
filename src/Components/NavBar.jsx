@@ -37,6 +37,8 @@ const handleClick = () =>{
             <a className='btn' onClick={miPublicacion}>MIS PUBLICACIONES</a>
             <a className='btn' onClick={publicar}>PUBLICAR</a>
             <a className='btn' onClick={cerrar} >CERRAR SESION</a>
+            <input className='inp-buscar' placeholder='¿Qué quieres buscar?' type="text" />
+            <button className='btn-buscar'>BUSCAR</button>
         </div>
         <div className='burguer'>
             <BurguerButton clicked={clicked} handleClick={handleClick}/>

@@ -4,13 +4,15 @@ import Publicaciones from '../Components/Publicaciones'
 import { traeCarrosPorUsuario } from '../Fetch/Get'
 import { useState,useEffect } from 'react'
 import { DeleteCars } from '../Fetch/Delete'
-import { putPublicacion } from '../Fetch/Put'
 import Editar from '../Components/Editar'
 
 function PublicacionesUsuario() {
   
   const [listaCarros,setListaCarros]=useState([])
   const [reload,setReload]=useState(false)
+  const [mostrarEditar, setMostrarEditar] = useState(false);
+  const [id,setID]=useState(0)
+
   useEffect(()=>{
     const traerCarros = async()=>{
       const data = await traeCarrosPorUsuario("cars",localStorage.getItem("idU"))
@@ -31,18 +33,16 @@ function PublicacionesUsuario() {
     setReload(!reload)
   }
   
-  const editarPubli = async ()=>{
-    const edit = await putPublicacion(id ,marca, modelo, precio, year)
-    console.log(edit)
-
-  }
-  
+  const editarClick = (id) => {
+    setMostrarEditar(true); 
+    setID(id)
+  };
 
     return (
     <div>
       <NabBar/>
-      <Publicaciones btnEditar={editarPubli} btnEliminar={eliminarPubli} getCarros={listaCarros} mostrar={true} />
-      {/* <Editar/> */}
+      <Publicaciones btnEditar={editarClick} btnEliminar={eliminarPubli}  getCarros={listaCarros} mostrar={true} />
+      {mostrarEditar && <Editar id={id} />} 
     </div>
   )
 }

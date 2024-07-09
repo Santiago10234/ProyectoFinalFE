@@ -3,12 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #ccc;
   }
   .NavBar{
     background: #ccc;
-    width: 1000px;
-    height: 50px;
-    border-radius: 5px;
+    width: 1400px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,11 +16,10 @@
   }
   .logo{
     cursor: pointer;
-    width: 100px;
+    width: 130px;
     margin-left: 10px;
   }
   .btn{
-    font-size: 15px;
     text-decoration: none;
     color: #0A1121;
     cursor: pointer;
@@ -31,9 +30,23 @@
     border-bottom: 1px solid #0A1121;
 
   }
+  .inp-buscar{
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+    height: 25px;
+  }
+  .btn-buscar{
+    border: none;
+    border-radius: 3px;
+    height: 25px;
+    cursor: pointer;
+  }
   .nave{
     display: flex;
     align-items: center;
+    z-index: 100;
+
   }
   .links{
     position: absolute;
@@ -60,7 +73,7 @@
   .links.active{
     width: 200px;
     background-color: #ccc;
-    border-radius: 10px;
+    border-radius: 5px;
     display: block;
     position: absolute;
     margin-left: auto;

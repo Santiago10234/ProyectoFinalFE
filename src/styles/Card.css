@@ -3,7 +3,7 @@
     background: #ccc;
     height: 250px;
     width: 200px;
-    border-radius: 10px;
+    border-radius: 5px;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -18,7 +18,7 @@
 .btn-eliminar{
     color: #ccc;
     background: rgb(186, 70, 70);
-    border-radius: 10px;
+    border-radius: 3px;
     border: none;
     cursor: pointer;
     transition: 0.4s;
@@ -30,7 +30,7 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 300px 300px 300px 200px;
+    grid-template-columns: 300px 300px 300px 300px 200px;
 }
 .contenedor-year-Elim{
     display: flex;
@@ -46,7 +46,7 @@
 .btn-edit{
     color: #ccc;
     background: rgb(37, 131, 59);
-    border-radius: 10px;
+    border-radius: 3px;
     border: none;
     cursor: pointer;
     transition: 0.4s;
