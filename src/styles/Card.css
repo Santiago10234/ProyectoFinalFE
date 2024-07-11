@@ -54,3 +54,30 @@
 .btn-edit:hover{
     transform: scale(1.1);
 }
+
+@media (max-width: 1400px) {
+    .contenedor-card{
+        display: grid;
+        grid-template-columns: 280px 280px 280px 200px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .contenedor-card{
+        display: grid;
+        grid-template-columns: 280px 280px 200px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contenedor-card{
+        display: grid;
+        grid-template-columns: 280px 210px;
+    }
+}
+@media (max-width: 600px) {
+    .contenedor-card{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}

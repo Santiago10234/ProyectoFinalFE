@@ -5,7 +5,6 @@ import { traeCarrosPorUsuario } from '../Fetch/Get'
 import { useState,useEffect } from 'react'
 import { DeleteCars } from '../Fetch/Delete'
 import Editar from '../Components/Editar'
-
 function PublicacionesUsuario() {
   
   const [listaCarros,setListaCarros]=useState([])
@@ -42,7 +41,7 @@ function PublicacionesUsuario() {
     <div>
       <NabBar/>
       <Publicaciones btnEditar={editarClick} btnEliminar={eliminarPubli}  getCarros={listaCarros} mostrar={true} />
-      {mostrarEditar && <Editar id={id}  recarga={recargaPag}/>} 
+      {mostrarEditar && <Editar id={id}  recarga={recargaPag} />} 
     </div>
   )
 }

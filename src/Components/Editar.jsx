@@ -2,14 +2,15 @@ import React, { useState } from 'react'
 import { putPublicacion } from '../Fetch/Put'
 
 
-function Editar({id,recarga}) {
+function Editar({id, recarga}) {
   const [brandE,setBrand]=useState()
   const [modelE,setModel]=useState()
   const [yearE,setYear]=useState()
   const [priceE,setPrice]=useState()
   const [imgE,setImg]=useState()
-
-  const handleImage = (e) => {
+  const [reload,setReload]=useState(false)
+  const [modal,setModal]=useState(true)
+  const handleImage = (e) => {  
     const file = document.getElementById("upload-file").files[0];
     const reader = new FileReader();
     if (file) {
@@ -18,7 +19,7 @@ function Editar({id,recarga}) {
         };
         reader.readAsDataURL(file);
     }
-};
+ };
 
   const actualizarDatos = async () =>{
     const actualizacion = {
@@ -30,14 +31,27 @@ function Editar({id,recarga}) {
     }
     await putPublicacion(id,actualizacion)
     recarga()
-    
+  }
+
+  const muestraModal=()=>{
+    setModal(true)  
+    actualizarDatos()
+  }
+
+  const cerrar = ()=>{
+      setModal(false)
 
   }
+  const recargaPag=()=>{
+    setReload(!reload)
+  }
+
   return (
     <div>
+      {modal && (
        <div className='container'>
         <div className="container-register">
-          <button className='cerrar'>X</button>
+          <button className='cerrar' onClick={cerrar} type='submit'>X</button>
           <h1 className='titulo'>Edita tu Vehículo</h1>
           <form className='container-inp'>
           <input className='file' id="upload-file" accept="image/x-png,image/gif,image/jpeg" type="file"  onChange={handleImage}/>
@@ -71,10 +85,11 @@ function Editar({id,recarga}) {
             <input className='inp' placeholder='Año' type="number" onChange={(e)=>setYear(e.target.value)}/>
             <input className='inp' placeholder='Precio' type="text" onChange={(e)=>setPrice(e.target.value)}/>
 
-            <button className='btn-register' onClick={actualizarDatos} type='submit'>Editar</button>
+            <button className='btn-register' onClick={muestraModal} type='submit'>Editar</button>
           </form>
         </div>
       </div>
+      )}
     </div>
   )
 }

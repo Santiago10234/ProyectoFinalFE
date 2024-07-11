@@ -6,9 +6,10 @@ function Register() {
     const [correo, setCorreo]=useState("")
     const [clave, setClave]=useState("")
     const navigate = useNavigate()
+    const [error, setError] = useState("") // Estado para manejar el mensaje de error
     const agregarUser = async ()=>{
         if (nombre.trim() === '' || correo.trim() === '' || clave.trim() === '') {
-            alert('Todos los espacios deben de estar completos');
+            setError('Todos los espacios deben de estar completos')
             return;
           }
         try {
@@ -27,6 +28,8 @@ function Register() {
     }
   return (
     <div className='container'>
+         {error && <p className='error-message'>{error}</p>} {/* Mostrar el mensaje de error */}
+
          <div className='container-register'>
            <form className='container-inp'>
                 <h1 className='titulo-register'>Sing Up</h1>
@@ -47,6 +50,7 @@ function Register() {
                     setClave(e.target.value)
                 }} placeholder='Password' className='inp' type="password" />
                 <button onClick={agregarUser} className='btn-register' type='button'>Register</button>
+               
            </form>
         </div>
     </div>

@@ -7,6 +7,7 @@ function Login() {
         const [lista, setLista]= useState([])
         const [correo, setCorreo] = useState("")
         const [clave, setClave] = useState("")
+        const [error, setError] = useState("") // Estado para manejar el mensaje de error
 
         useEffect(()=>{
             const traeDatitos = async()=>{
@@ -23,7 +24,7 @@ function Login() {
                 localStorage.setItem("idU",usuario.id)
                 navigate("/luxuryCars")
             }else{
-                alert("Email o contraseña incorrecta")
+                setError('Email o contraseña incorrecta')
                 console.log(lista);
             }
             
@@ -31,6 +32,7 @@ function Login() {
 
  return (
     <div className='container'>
+        {error && <p className='error-message'>{error}</p>} {/* Mostrar el mensaje de error */}
          <div className='container-register'>
            <form className='container-inp'>
                 <h1 className='titulo-register'>Login</h1>
