@@ -5,9 +5,10 @@ function Register() {
     const [nombre,setNombre]=useState("")
     const [correo, setCorreo]=useState("")
     const [clave, setClave]=useState("")
-    const navigate = useNavigate()
+    const navigate = useNavigate()// Hook para manejar la navegación
+
     const [error, setError] = useState("") // Estado para manejar el mensaje de error
-    const agregarUser = async ()=>{
+    const agregarUser = async ()=>{ // Función asíncrona para agregar un nuevo usuario
         if (nombre.trim() === '' || correo.trim() === '' || clave.trim() === '') {
             setError('Todos los espacios deben de estar completos')
             return;
@@ -18,10 +19,11 @@ function Register() {
                 email:correo,
                 password:clave
             })
+             // Limpia los campos del formulario
             setNombre("")
             setCorreo("")
             setClave("")
-            navigate("/login")
+            navigate("/login") // Redirige al usuario a la página de login
         } catch (error) {
             console.error(error);
         }

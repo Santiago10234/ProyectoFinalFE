@@ -3,13 +3,14 @@ import traerUser from '../Fetch/Get'
 import { useNavigate } from 'react-router-dom'
 
 function Login() {
-    const navigate = useNavigate()
-        const [lista, setLista]= useState([])
-        const [correo, setCorreo] = useState("")
-        const [clave, setClave] = useState("")
-        const [error, setError] = useState("") // Estado para manejar el mensaje de error
+    const navigate = useNavigate() // Hook para manejar la navegación de la pagina
 
-        useEffect(()=>{
+        const [lista, setLista]= useState([])  // Estado para almacenar la lista de usuarios
+        const [correo, setCorreo] = useState("") // Estado para almacenar el correo electrónico ingresado
+        const [clave, setClave] = useState("") // Estado para almacenar la clave ingresado
+        const [error, setError] = useState("") // Estado para manejar el mensaje de error
+        
+        useEffect(()=>{  // Hook useEffect para cargar los datos de usuarios
             const traeDatitos = async()=>{
                 const infoUser = await traerUser()
                 setLista(infoUser)
@@ -18,7 +19,7 @@ function Login() {
         },[])
   
         
-        const valitar = ()=>{
+        const validar = ()=>{ // Función para validar los datos del usuario
             const usuario = lista.find(users => users.email === correo && users.password === clave)
             if(usuario){
                 localStorage.setItem("idU",usuario.id)
@@ -38,7 +39,7 @@ function Login() {
                 <h1 className='titulo-register'>Login</h1>
                 <input onChange={(e)=>{setCorreo(e.target.value)}} placeholder='Email' className='inp' type="email" />
                 <input onChange={(e)=>{setClave(e.target.value)}} placeholder='Password' className='inp' type="password" />
-                <button onClick={valitar} className='btn-register' type='button'>Login</button>
+                <button onClick={validar} className='btn-register' type='button'>Login</button>
            </form>
         </div>
     </div>

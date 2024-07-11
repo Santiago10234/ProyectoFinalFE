@@ -3,24 +3,28 @@ import { putPublicacion } from '../Fetch/Put'
 
 
 function Editar({id, recarga}) {
+  // Estados para almacenar los valores de los campos del formulario
   const [brandE,setBrand]=useState()
   const [modelE,setModel]=useState()
   const [yearE,setYear]=useState()
   const [priceE,setPrice]=useState()
   const [imgE,setImg]=useState()
-  const [reload,setReload]=useState(false)
-  const [modal,setModal]=useState(true)
+  const [reload,setReload]=useState(false) // Estado para manejar la recarga
+  const [modal,setModal]=useState(true) // Estado para manejar la visibilidad del modal
+
+  // Maneja la carga y vista previa de la imagen seleccionada.
   const handleImage = (e) => {  
-    const file = document.getElementById("upload-file").files[0];
+    const file = document.getElementById("upload-file").files[0]; // Obtiene el archivo seleccionado
     const reader = new FileReader();
     if (file) {
         reader.onload = function(e) {
-            setImg(e.target.result);
+            setImg(e.target.result);  // Establece el resultado de la lectura como la URL de la imagen
         };
         reader.readAsDataURL(file);
     }
  };
 
+  // Actualiza los datos del vehículo usando la función putPublicacion.
   const actualizarDatos = async () =>{
     const actualizacion = {
       brand:brandE,
@@ -30,14 +34,14 @@ function Editar({id, recarga}) {
       price:priceE
     }
     await putPublicacion(id,actualizacion)
-    recarga()
+    recarga() // Llama a la función recarga para actualizar la vista
   }
-
+  // Muestra el modal y actualiza los datos del vehículo.
   const muestraModal=()=>{
     setModal(true)  
     actualizarDatos()
   }
-
+  // Cierra el modal.
   const cerrar = ()=>{
       setModal(false)
 

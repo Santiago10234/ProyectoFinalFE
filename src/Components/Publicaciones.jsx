@@ -4,6 +4,7 @@ import  Card  from '../Components/Card'
 function Publicaciones({getCarros,mostrar,btnEliminar,btnEditar}) {
   
   return (
+    // Mapea la lista de carros y renderiza un componente Card para cada uno
     <div className='contenedor-card'>
        {getCarros.map(car=>(
         <Card
