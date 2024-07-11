@@ -4,6 +4,7 @@ import logo from '../img/Logo.png'
 import { useNavigate } from 'react-router-dom'
 import BurguerButton from './BurguerButton'
 import { useState } from 'react'
+import LuxuryCarsInicio from '../Pages/LuxuryCarsInicio'
 
 function NabBar() {
   const[clicked, setClicked] = useState(false)
@@ -21,6 +22,9 @@ function NabBar() {
     const miPublicacion = () =>{
      navigate("/mipublicacion")
     }
+    const LuxuryInicio = () =>{
+      navigate("/LuxuryCarInicio")
+     }
 const handleClick = () =>{
 // cuando esta true lo pasa a false
   setClicked(!clicked)
@@ -32,7 +36,7 @@ const handleClick = () =>{
       <nav className='NavBar'>
             <img className='logo'  onClick={luxuryCars} src={logo} alt="Logo" />
         <div className={`nave links ${clicked ? "active" : ""}`}>
-            <a className='btn'>INICIO</a>
+            <a className='btn' onClick={()=>navigate("/inicio")}>INICIO</a>
             <a className='btn' onClick={luxuryCars}>VEHÍCULOS</a>
             <a className='btn' onClick={miPublicacion}>MIS PUBLICACIONES</a>
             <a className='btn' onClick={publicar}>PUBLICAR</a>

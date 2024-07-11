@@ -1,0 +1,24 @@
+.quienes-somos {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quienes-somos h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .quienes-somos p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+  }
+  .colorh1{
+    color: #ccc;
+  }
