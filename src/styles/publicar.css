@@ -1,0 +1,12 @@
+.file{
+    color: #0A1121;
+    background-color: #ccc;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+}
+.titulo{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #ccc;
+}

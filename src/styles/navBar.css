@@ -3,22 +3,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #ccc;
   }
   .NavBar{
     background: #ccc;
-    width: 1000px;
-    height: 50px;
-    border-radius: 5px;
+    width: 1400px;
+    height: 60px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
   }
   .logo{
-    width: 100px;
+    cursor: pointer;
+    width: 130px;
     margin-left: 10px;
   }
   .btn{
-    background: none;
-    border: none;
+    text-decoration: none;
     color: #0A1121;
     cursor: pointer;
     margin-left: 20px;
@@ -28,9 +30,64 @@
     border-bottom: 1px solid #0A1121;
 
   }
-  .navegacion{
+  .inp-buscar{
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+    height: 25px;
+  }
+  .btn-buscar{
+    border: none;
+    border-radius: 3px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .nave{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    z-index: 100;
+
   }
-  
+  .links{
+    position: absolute;
+    top: -150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: 0.5s;
+    a{
+      display: block;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-right: 20px;
+    }
+    input{
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    button{
+      margin-bottom: 10px;
+    }
+    @media(min-width: 778px){
+      position: initial;
+      margin: 0;
+      a{
+        font-size: 1rem;
+        display: inline;
+      }
+      
+   }
+  }
+  .links.active{
+    width: 200px;
+    background-color: #ccc;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }

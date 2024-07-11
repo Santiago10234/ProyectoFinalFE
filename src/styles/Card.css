@@ -1,0 +1,83 @@
+.container-2{
+    margin-top: 100px;
+    background: #ccc;
+    height: 250px;
+    width: 200px;
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    border-radius: 5px;
+}
+.price{
+    color: green;
+}
+
+.btn-eliminar{
+    color: #ccc;
+    background: rgb(186, 70, 70);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btn-eliminar:hover{
+    transform: scale(1.1);
+}
+.contenedor-card{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px 300px 200px;
+}
+.contenedor-year-Elim{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -15px;
+}
+.container-price-edit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-edit{
+    color: #ccc;
+    background: rgb(37, 131, 59);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btn-edit:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 1400px) {
+    .contenedor-card{
+        display: grid;
+        grid-template-columns: 280px 280px 280px 200px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .contenedor-card{
+        display: grid;
+        grid-template-columns: 280px 280px 200px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contenedor-card{
+        display: grid;
+        grid-template-columns: 280px 210px;
+    }
+}
+@media (max-width: 600px) {
+    .contenedor-card{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}

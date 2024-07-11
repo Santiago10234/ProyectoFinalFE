@@ -55,7 +55,7 @@
   margin-top: 100px;
   padding-top: 15px;
   padding-bottom: 60px;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 1px 1px 20px rgb(0, 0, 22);
 }
 .container{
@@ -69,9 +69,8 @@
 .container-register{
   background: #0f1931;
   padding: 20px;
-  
-  width: 200px;
-  border-radius: 20px;
+  width: 300px;
+  border-radius: 10px;
   box-shadow: 1px 1px 20px black;
   position: absolute;
   top: 50%;
@@ -94,6 +93,7 @@
   border: none;
   border-radius: 2px;
   padding: 5px;
+  width: 260px;
 }
 .btn-register{
   margin-top: 20px;
@@ -114,4 +114,22 @@
   transition: 1s;
   transform: scale(1.1);
 }
-
+.cerrar{
+  color: #ccc;
+  background-color: transparent;
+  border: none;
+  margin-left: 280px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cerrar:hover{
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+.error-message{
+  margin-bottom: -220px;
+  background-color: rgb(138, 14, 14);
+  color: #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
